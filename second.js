@@ -1,4 +1,5 @@
-$(document).ready(function(){
+$(function(){
+
   console.log('test');
 
   // URLパラメータ文字列を取得する

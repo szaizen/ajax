@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(function(){
   console.log('test');
 
   $.post( 'https://szaizen.github.io/ajax/second.html', 'test=aaa' )
