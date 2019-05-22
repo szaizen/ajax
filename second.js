@@ -1,9 +1,10 @@
-jQuery(document).ready(function(){
+$(document).ready(function(){
   console.log('test');
 
   // URLパラメータ文字列を取得する
   var param = location.search
   console.log('GETパラーメータ：' + getParam('test'));
+  getPost();
 
   function getParam(name, url) {
     if (!url) url = window.location.href;
@@ -19,7 +20,7 @@ jQuery(document).ready(function(){
     xhr.onreadystatechange = function() {
       if(xhr.readyState === 4 && xhr.status === 200) {
         console.log( xhr.responseText );
-        
+
       }
     }
   }
